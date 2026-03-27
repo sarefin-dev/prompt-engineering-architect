@@ -4,16 +4,24 @@ A workflow operating system that injects rigorous prompt engineering methodology
 
 This repository operationalizes the standard prompt engineering patterns defined in *Prompt Engineering for Developers & Architects*, including APOS structure, vocabulary discipline, quality gating, and MCP-aware prompt assembly.
 
-Instead of generic behavior, this repository configures Claude Code to act as eight specialized architectural reviewers, using a library of 10 methodological skills and 11 focused slash commands.
+Instead of generic behavior, this repository configures Claude Code to act as seven specialized architectural reviewers, using a library of 10 methodological skills and 11 focused slash commands.
 
 ## Installation
 
-Because Claude Code automatically discovers configuration and methodological files in the `.claude/` directory, installation is zero-configuration:
+Choose one of three ways to install the methodology into your Claude Code environment:
 
-1. Copy the `.claude/`, `vocabulary/`, and `templates/` directories into your own project root.
-2. Start your agent:
 ```bash
-claude
+# Option 1 — copy into project (simplest)
+cp -r prompt-engineering-architect/.claude ./
+
+# Option 2 — git submodule (keeps updatable)
+git submodule add https://github.com/sarefin-dev/prompt-engineering-architect .pe-toolkit
+ln -s .pe-toolkit/.claude .claude
+
+# Option 3 — global install (all projects)
+cp -r .claude/skills ~/.claude/skills
+cp -r .claude/agents ~/.claude/agents
+cp -r .claude/commands ~/.claude/commands
 ```
 
 ## How It Works
