@@ -8,9 +8,12 @@ Instead of generic behavior, this repository configures Claude Code to act as ei
 
 ## Installation
 
+Because Claude Code automatically discovers configuration and methodological files in the `.claude/` directory, installation is zero-configuration:
+
+1. Copy the `.claude/`, `vocabulary/`, and `templates/` directories into your own project root.
+2. Start your agent:
 ```bash
-# In your project root
-claude config add .claude/
+claude
 ```
 
 ## How It Works
