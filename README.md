@@ -4,7 +4,7 @@ A workflow operating system that injects rigorous prompt engineering methodology
 
 This repository operationalizes the standard prompt engineering patterns defined in *Prompt Engineering for Developers & Architects*, including APOS structure, vocabulary discipline, quality gating, and MCP-aware prompt assembly.
 
-Instead of generic behavior, this repository configures Claude Code to act as seven specialized architectural reviewers, using a library of 10 methodological skills and 11 focused slash commands.
+Instead of generic behavior, this repository configures Claude Code to act as nine specialized architectural reviewers, using a library of 15 methodological skills and 11 focused slash commands.
 
 ## Installation
 
@@ -36,8 +36,8 @@ This system leverages three mechanisms to change baseline agent behavior into me
 
 *   **`README.md`**: This overview.
 *   **`CLAUDE.md`**: The root configuration file that loads the system.
-*   **`.claude/skills/`**: 10 skill files (methodology execution rules).
-*   **`.claude/agents/`**: 7 agent personas (specialized reviewers).
+*   **`.claude/skills/`**: 15 skill files (methodology execution rules).
+*   **`.claude/agents/`**: 9 agent personas (specialized reviewers).
 *   **`.claude/commands/`**: 11 slash commands (workflow accelerators).
 *   **`.claude/hooks/`**: Automated execution and pre-deployment gates.
 *   **`vocabulary/`**: YAML-structured definitions of the 9 vocabulary categories.
@@ -62,4 +62,8 @@ By installing this system, your agent gains the ability to:
 *   **Output Control**: See Chapter 9. Operationalized in `.claude/skills/output-contract.md`.
 *   **Quality Gates**: See Chapter 10. Operationalized in `.claude/skills/pre-deployment-gate.md` and `.claude/hooks/`.
 *   **Reasoning Directives**: See Chapter 12 and 34. Operationalized in `.claude/skills/reasoning-directives.md`.
+*   **Tree of Thought**: See Chapter 12 (§12.6). Operationalized in `.claude/skills/tot-reasoning.md`.
+*   **Agentic Patterns**: See Chapter 16 (ReAct & Plan-and-Execute). Operationalized in `.claude/skills/react-pattern.md` and `.claude/skills/plan-execute.md`.
+*   **File-Based Context**: See Chapter 7 (§7.8). Operationalized in `.claude/skills/file-context.md`.
+*   **Local Inference Routing**: See Chapter 30. Operationalized in `.claude/skills/local-inference.md`.
 *   **MCP Prompt Engineering**: See Chapter 33 & 34. Operationalized in `.claude/skills/mcp-prompting.md`.
