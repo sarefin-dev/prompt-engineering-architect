@@ -63,7 +63,10 @@ By installing this system, your agent gains the ability to:
 *   **Quality Gates**: See Chapter 10. Operationalized in `.claude/skills/pre-deployment-gate.md` and `.claude/hooks/`.
 *   **Reasoning Directives**: See Chapter 12 and 34. Operationalized in `.claude/skills/reasoning-directives.md`.
 *   **Tree of Thought**: See Chapter 12 (§12.6). Operationalized in `.claude/skills/tot-reasoning.md`.
+*   **RAG for Architects**: See Chapter 14. *(RAG skill planned for future release)*.
 *   **Agentic Patterns**: See Chapter 16 (ReAct & Plan-and-Execute). Operationalized in `.claude/skills/react-pattern.md` and `.claude/skills/plan-execute.md`.
 *   **File-Based Context**: See Chapter 7 (§7.8). Operationalized in `.claude/skills/file-context.md`.
 *   **Local Inference Routing**: See Chapter 30. Operationalized in `.claude/skills/local-inference.md`.
 *   **MCP Prompt Engineering**: See Chapter 33 & 34. Operationalized in `.claude/skills/mcp-prompting.md`.
+*   **Software Quality & Testing**: See Chapter 35. Operationalized in `.claude/skills/test-suite-design.md` and `.claude/skills/tdd-prompt-cycle.md`.
+*   **Python SDK Patterns**: See Appendix K. *(SDK skill planned for future release)*.
